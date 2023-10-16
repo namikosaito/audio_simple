@@ -21,8 +21,8 @@ stream_1=p.open(format = pyaudio.paInt16,
         frames_per_buffer = CHUNK,
         input = True,
         output = True,
-        input_device_index = 10
-        ) # inputとoutputを同時にTrueにする
+        input_device_index = 1
+        )
 
 stream_2=p.open(format = pyaudio.paInt16,
         channels = 1,
@@ -30,8 +30,8 @@ stream_2=p.open(format = pyaudio.paInt16,
         frames_per_buffer = CHUNK,
         input = True,
         output = True,
-        input_device_index = 11
-        ) # inputとoutputを同時にTrueにする
+        input_device_index = 1
+        ) 
 
 def image_drawing(sensor_value):
     image = np.full((300, 600, 3), 255, dtype=np.uint8)
